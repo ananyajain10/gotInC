@@ -64,38 +64,37 @@ int main(){
 d. Make your own pow function
 
 answer:
-int main(){
-	double x,y,cnt,res;
-	res=1;
-	printf("Enter a number: ");
-	scanf("%lf",&x);
-	printf("Enter raise power: ");
-	scanf("%lf",&y);
-	for ( cnt=0; cnt<y; cnt++){
-		res*=x; 
-		
-	}
-	printf("%lf",res);
-	return 0;
-}
-
-*/
-
 #include <math.h>
 #include <stdio.h>
 
 int main(){
-	double x,y,cnt,res;
-	res=1;
-	printf("Enter a number: ");
-	scanf("%lf",&x);
-	printf("Enter raise power: ");
-	scanf("%lf",&y);
-	for ( cnt=0; cnt<y; cnt++){
-		res*=x; 
-		
-	}
-	printf("%lf",res);
+	float x,y,res;
+	printf("ENTER A NUMBER:");
+	scanf("%f",&x);
+	printf("ENTER RAISING POWER:");
+	scanf("%f",&y);
+	res= exp(y*(log(x)));
+	printf("%f to the power %f is %f",x,y,res);
+	
+
+	return 0;
+}
+
+
+*/
+#include <math.h>
+#include <stdio.h>
+
+int main(){
+	float x,y,res;
+	printf("ENTER A NUMBER:");
+	scanf("%f",&x);
+	printf("ENTER RAISING POWER:");
+	scanf("%f",&y);
+	res= exp(y*(log(x)));
+	printf("%f to the power %f is %f",x,y,res);
+	
+
 	return 0;
 }
 
