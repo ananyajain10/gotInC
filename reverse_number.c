@@ -3,7 +3,7 @@
 int main(){
 	int n,rev=0,r,q;
 	
-	printf("ENTER A 2 DIGIT NUMBER:");
+	printf("ENTER A  NUMBER:");
 	scanf("%d",&n);
 	q=n;
 	
